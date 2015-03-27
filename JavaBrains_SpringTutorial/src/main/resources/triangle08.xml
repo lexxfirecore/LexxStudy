@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="triangle" class="com.lexxstudy.javabrains.spring08.inner_beans_aliases_and_idref.Triangle" name="triangle-name"> <!-- can use name field or alias to use bean with differnet name -->
+		
+		<!-- pointA property have reference to zeroPoint, so zeroPoint will be created first than pointA bean -->
+		<property name="pointA" ref="zeroPoint" />
+		 
+		
+		<!-- pointB have a inner bean pointB, the id and ref fields are no longer needed-->
+		<property name="pointB">
+			<bean class="com.lexxstudy.javabrains.spring08.inner_beans_aliases_and_idref.Point">
+				<property name="x" value="-20" />
+				<property name="y" value="0" />
+			</bean>
+		</property>
+		
+		<!-- of course we can leave id field but functionality won't change -->
+		<property name="pointC">
+			<bean id="Point3" class="com.lexxstudy.javabrains.spring08.inner_beans_aliases_and_idref.Point">
+				<property name="x" value="0" />
+				<property name="y" value="20" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="zeroPoint" class="com.lexxstudy.javabrains.spring08.inner_beans_aliases_and_idref.Point">
+		<property name="x" value="0" />
+		<property name="y" value="0" />
+	</bean>
+	
+	<alias name="triangle" alias="triangle-alias" />
+	
+</beans>
+
