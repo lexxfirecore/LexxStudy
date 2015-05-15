@@ -12,12 +12,14 @@
     </bean>
 
     <bean id="beforeAdviser" class="com.lexxstudy.spring_aop.aop.BeforeAdviser" />
+    <bean id="afterAdviser" class="com.lexxstudy.spring_aop.aop.AfterAdviser" />
 
     <bean id="amplifierServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean" >
         <property name="target" ref="amplifierService"/>
         <property name="interceptorNames">
             <list>
                 <value>beforeAdviser</value>
+                <value>afterAdviser</value>
             </list>
         </property>
     </bean>

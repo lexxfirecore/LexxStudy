@@ -10,7 +10,7 @@ public class AmplifierService {
 
     void setDefaultSettings() {
         amplifier.setGain(43);
-        amplifier.setVolume(86);
+        amplifier.setVolume(10);
         amplifier.setLowEq(50);
         amplifier.setMidEq(63);
         amplifier.setHighEq(80);
@@ -39,6 +39,7 @@ public class AmplifierService {
     }
 
 
+    // correction will allow only values 0..100
     private int doCorrection(int settingValue) {
         if (settingValue > 100) {
             return 100;
@@ -49,14 +50,19 @@ public class AmplifierService {
         }
     }
 
+    // setter to change amplifier model
     public void setAmplifierModel(String modelName) {
         amplifier.setModel(modelName);
     }
 
+
+    // setter will be used by Spring to inject amplifier bean
     public void setAmplifier(Amplifier amplifier) {
         this.amplifier = amplifier;
     }
 
 
-
+    public Amplifier getAmplifier() {
+        return amplifier;
+    }
 }

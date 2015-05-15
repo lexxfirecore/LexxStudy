@@ -11,33 +11,38 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainControl {
 
     public static void main(String[] args) {
+
+        //  create an application context container object from xml by classpath
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+
+        // ******************* Spring *******************
+
+        //  get amplifier and amplifier service beans from application context
         Amplifier amplifier = (Amplifier) applicationContext.getBean("amplifier");
         AmplifierService amplifierService = (AmplifierService) applicationContext.getBean("amplifierService");
 
-        System.out.println("Amplifier initial values: " + amplifier.toString());
+        System.out.println("Main: Amplifier object initial values: " + amplifier.toString());
+
+        // setting the default values in amplifier object from service
         amplifierService.setDefaultSettings();
-        System.out.println("Amplifier value after reset: " + amplifier.toString());
+        System.out.println("Amplifier object values changed by amplifierService.setDefaultSettings(): " + amplifier.toString());
 
+        // changing volume +10
         amplifierService.raiseVolume(10);
+        // changing gain -7
         amplifierService.reduceGain(7);
-        System.out.println("Amplifier value after changes: " + amplifier.toString());
+        System.out.println("Amplifier value after changes of volume with + 10 and gain with - 7: " + amplifier.toString());
 
+
+        // ****************** Spring AOP *****************
+
+        // getting proxy bean to amplifierService bean from application context
         AmplifierService amplifierServiceProxy = (AmplifierService) applicationContext.getBean("amplifierServiceProxy");
 
-        amplifierServiceProxy.raiseVolume(50);
-        amplifierServiceProxy.reduceGain(2);
-        System.out.println("Amplifier value after aspect changes: " + amplifier.toString());
-
-                /* in loc de docs :)
-        o clasa amplifier si un service in care se injecteaza amplifier prin setter
-[17:27:59] Lexx: service schimba valorile din amplifier
-[17:28:26] Lexx: un aspect care face un proxy la service si citeste metodele apelate
-[17:28:51] Lexx: aspectul bean si proxy se declara tot in context
-[17:29:25] Lexx: in main chem proxy class de tip AmplifierService si chem ceva metode de la el
-[17:30:02] Lexx: si in acest moment se executa aspectul care modifica modelul amplului
-[17:30:04] Lexx: iaka asa
-         */
+        System.out.println("Main: Before running method amplifierServiceProxy.raiseVolume(49): ");
+        amplifierServiceProxy.raiseVolume(49);
+        System.out.println("Main: After running method amplifierServiceProxy.raiseVolume(49): ");
 
     }
 
