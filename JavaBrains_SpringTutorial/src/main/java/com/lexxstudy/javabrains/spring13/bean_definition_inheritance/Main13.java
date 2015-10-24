@@ -1,4 +1,6 @@
 package com.lexxstudy.javabrains.spring13.bean_definition_inheritance;
+import java.util.HashMap;
+import java.util.Map;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -18,7 +20,8 @@ public class Main13 {
 		Triangle triangle2 = (Triangle) context.getBean("triangle2");
 		System.out.println("triangle2 have pointB and inherits pointA from parenttriangle bean but has no pointC defined and generates exception");
 		triangle2.draw();
-		
+
+        Map<Integer, Map.Entry<Character, Character>> itemsMap = new HashMap<Integer, Map.Entry<Character, Character>>();
 	}
 
 }
