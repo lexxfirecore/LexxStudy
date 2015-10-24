@@ -7,8 +7,11 @@
     <artifactId>LexxStudy</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
-
-
+    <modules>
+        <module>JavaBrains_HibernateTutorial</module>
+        <module>JavaBrains_SpringTutorial</module>
+        <module>JavaPractice</module>
+    </modules>
     <properties>
 
         <!-- Generic properties -->
