@@ -1,4 +1,4 @@
-package com.lexxstudy.ftp;
+package com.lexxstudy.io;
 
 import java.io.File;
 import java.io.FileInputStream;
