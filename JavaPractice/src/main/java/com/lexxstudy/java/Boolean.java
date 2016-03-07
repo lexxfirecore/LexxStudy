@@ -1,4 +1,4 @@
-package com.lexxstudy.javabase;
+package com.lexxstudy.java;
 
 public class Boolean {
 
