@@ -31,13 +31,14 @@
         </dependency>
 
         <!--Postgres DB-->
+<!--
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>9.4-1204-jdbc42</version>
         </dependency>
 
-        <!-- Derby DB -->
+        &lt;!&ndash; Derby DB &ndash;&gt;
         <dependency>
             <groupId>org.apache.derby</groupId>
             <artifactId>derby</artifactId>
@@ -50,6 +51,7 @@
             <version>10.9.1.0</version>
         </dependency>
 
+-->
 
 
     </dependencies>
