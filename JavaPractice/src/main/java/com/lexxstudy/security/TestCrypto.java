@@ -3,14 +3,6 @@ package com.lexxstudy.security;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * This class contains
- *
- * @author Alexandru Corghencea <a href="c-alexandru.corghencea@edifecs.com">
- *         c-alexandru.corghencea@edifecs.com</a>
- */
-
-
 public class TestCrypto {
 
     @Test
