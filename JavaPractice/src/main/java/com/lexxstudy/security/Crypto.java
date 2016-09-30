@@ -14,13 +14,6 @@ import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import javax.crypto.Cipher;
 
-/**
- * This class contains
- *
- * @author Alexandru Corghencea <a href="c-alexandru.corghencea@edifecs.com">
- *         c-alexandru.corghencea@edifecs.com</a>
- */
-
 public final class Crypto {
 
     private String location;
