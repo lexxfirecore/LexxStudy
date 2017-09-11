@@ -1,5 +1,0 @@
-package com.lexxstudy.generateCode;
-public class CreateNewClass {  
- public final static String my.Hello="my.hello";
- public final static String my.Bye="my.hello";
-}
