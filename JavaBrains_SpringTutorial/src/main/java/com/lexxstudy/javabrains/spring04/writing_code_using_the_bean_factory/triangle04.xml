@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
-<!-- this XML file is used by BeanFactory class so it should be placed in root folder of the project near src folder and pom.xml-->
-<beans>
-	<bean id="triangle" class="com.lexxstudy.javabrains.spring04.writing_code_using_the_bean_factory.Triangle" />
-
-
-</beans>
