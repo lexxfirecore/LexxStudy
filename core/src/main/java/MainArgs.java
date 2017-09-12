@@ -1,5 +1,3 @@
-package com.lexx.java;
-
 import java.io.File;
 import java.util.HashMap;
 import java.util.HashSet;

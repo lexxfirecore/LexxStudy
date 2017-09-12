@@ -1,7 +1,3 @@
-package com.lexx.collections;
-
-import com.lexx.Localizer.Point;
-
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.Arrays;

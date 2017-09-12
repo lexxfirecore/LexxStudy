@@ -1,6 +1,6 @@
 package exceptions;
 
-public class Exception_Example {
+public class TryCatch {
 
 	public static void main(String[] args) {
 		Exception exc = new Exception("exceptie theta");
