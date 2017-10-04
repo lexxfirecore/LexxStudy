@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * Created by Alex Corghencea on 07 September 2017.
  */
-public class MainArray {
+public class Array {
 
         public static void main(String[] args) {
 

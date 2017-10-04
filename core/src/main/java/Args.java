@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Set;
 import org.apache.commons.lang3.ArrayUtils;
 
-public class MainArgs {
+public class Args {
 
     private static String folder;
 
