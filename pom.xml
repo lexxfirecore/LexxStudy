@@ -8,7 +8,6 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>JavaPractice</module>
         <module>core</module>
         <module>io</module>
         <module>oop</module>
@@ -18,8 +17,9 @@
         <module>jvm</module>
         <module>collections</module>
         <module>strings</module>
-        <module>GenerateCode</module>
         <module>network</module>
+        <module>groovy</module>
+        <module>resources</module>
     </modules>
 
 

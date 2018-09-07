@@ -4,18 +4,17 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
-import com.lexxutils.Utils;
-import static com.lexxutils.Utils.print;
+
 
 /**
  * Created by alexandruco on 3/7/2016.
  */
 public class Streams {
     public static void main(String[] args) {
-        print("Old way:");
+        System.out.printf("Old way:");
         listFilesOld();
 
-        print("New way:");
+        System.out.println("New way:");
         listFilesNew();
     }
 

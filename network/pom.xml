@@ -11,5 +11,13 @@
 
     <artifactId>network</artifactId>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.snmp4j/snmp4j -->
+        <dependency>
+            <groupId>org.snmp4j</groupId>
+            <artifactId>snmp4j</artifactId>
+            <version>2.5.0</version>
+        </dependency>
 
+    </dependencies>
 </project>
