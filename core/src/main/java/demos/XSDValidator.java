@@ -1,4 +1,4 @@
-
+package demos;
 
 import javax.xml.XMLConstants;
 import javax.xml.transform.stream.StreamSource;
@@ -13,7 +13,7 @@ import java.io.InputStream;
 /**
  * Created by c-ionnbote on 11/7/2017.
  */
-public class Main {
+public class XSDValidator {
     public static void main(String[] args) throws FileNotFoundException {
         String schema = "S:\\Edifecs\\TM\\sdk\\tm-components-xes\\tm\\resources\\gbd-search\\template\\schema\\ops-repository-v1.0.xsd";
         String xml =    "S:\\Edifecs\\TM\\sdk\\tm-components-xes\\tm\\resources\\gbd-search\\template\\search_sample.xml";
