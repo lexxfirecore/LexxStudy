@@ -57,8 +57,6 @@ public class SecurityJCE {
         cipher.init(Cipher.DECRYPT_MODE, key, spec);
         byte[] plainText = cipher.doFinal(cipherText);
         System.out.println(new String(plainText));
-
-
     }
 
 }
